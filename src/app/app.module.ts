@@ -5,11 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentLifeCycleComponent } from './tutorials/component-life-cycle/component-life-cycle.component';
 import { FormsModule } from '@angular/forms';
+import { AngularFormsConceptsComponent } from './tutorials/angular-forms-concepts/angular-forms-concepts.component';
+import { TemplateDrivenFormsComponent } from './tutorials/angular-forms-concepts/template-driven-forms/template-driven-forms.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentLifeCycleComponent
+    ComponentLifeCycleComponent,
+    AngularFormsConceptsComponent,
+    TemplateDrivenFormsComponent
+   
   ],
   imports: [
     BrowserModule,
