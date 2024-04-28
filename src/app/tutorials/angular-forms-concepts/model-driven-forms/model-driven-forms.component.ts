@@ -19,7 +19,15 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
     </div>
     <button>Send</button>
   </form>
-  Valid :{{frm.valid}}
+  Valid :{{frm.valid}} <br>
+  frm touched :{{frm.touched}} <br>
+  name touched: {{frm.get("name").touched}} <br>
+  address touched: {{frm.get("address").touched}} <br>
+  country touched: {{frm.get("address").get("country").touched}} <br>
+  Angular formda programatik olarak durum değiştirme fonksiyonları : <br>
+
+  <button (click)="markAsTouched()">MARK AS TOUCHED</button> <br>
+  <button (click)="markAsAllTouched()">MARK AS ALL TOUCHED</button> <br>
   `
 })
 export class ModelDrivenFormsComponent {
@@ -43,8 +51,15 @@ export class ModelDrivenFormsComponent {
       }
     })
   }
-  
+ 
   submitForm(){
     console.log(this.frm.value)
   }
+  markAsTouched(){
+    this.frm.get("name").markAsTouched({onlySelf:true});
+  }
+  markAsAllTouched(){
+    this.frm.get("address").markAllAsTouched();
+  }
+  
 }
