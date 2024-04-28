@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
   <hr>
   <h1>Ders 2</h1>
   <app-angular-forms-concepts></app-angular-forms-concepts>
+ 
+  
   `
 })
 export class AppComponent {

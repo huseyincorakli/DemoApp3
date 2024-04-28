@@ -25,36 +25,36 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   
   `
 })
-export class ComponentLifeCycleComponent implements OnInit, OnChanges,DoCheck,AfterContentInit,AfterContentChecked,AfterViewInit,AfterViewChecked,OnDestroy {
+export class ComponentLifeCycleComponent {
   
   
  
  @Input() input :string="123123";
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log("1-ngOnChanges")
-  }
-  ngOnInit(): void {
-    console.log("2-ngOnInit")
-  }
-  ngDoCheck(): void {
-    console.log("3-ngDoCheck")
-  }
-  ngAfterContentInit(): void {
-    console.log("4-ngAfterContentInit")
-  }
-  ngAfterContentChecked(): void {
-    console.log("5-ngAfterContentChecked")
-  }
-  ngAfterViewInit(): void {
-    console.log("6-ngAfterViewInit")
-  }
-  ngAfterViewChecked(): void {
-    console.log("7-ngAfterViewChecked");
+  // ngOnChanges(changes: SimpleChanges): void {
+  //   console.log("1-ngOnChanges")
+  // }
+  // ngOnInit(): void {
+  //   console.log("2-ngOnInit")
+  // }
+  // ngDoCheck(): void {
+  //   console.log("3-ngDoCheck")
+  // }
+  // ngAfterContentInit(): void {
+  //   console.log("4-ngAfterContentInit")
+  // }
+  // ngAfterContentChecked(): void {
+  //   console.log("5-ngAfterContentChecked")
+  // }
+  // ngAfterViewInit(): void {
+  //   console.log("6-ngAfterViewInit")
+  // }
+  // ngAfterViewChecked(): void {
+  //   console.log("7-ngAfterViewChecked");
     
-  }
-  ngOnDestroy(): void {
-    console.log("8-ngOnDestroy");
-  }
+  // }
+  // ngOnDestroy(): void {
+  //   console.log("8-ngOnDestroy");
+  // }
   
   
   

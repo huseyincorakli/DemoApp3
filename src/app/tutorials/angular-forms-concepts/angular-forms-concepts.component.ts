@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
    Kullanıcılardan veri almak ya da Kullanıcılarla etkileşime girebilmek için kullanılan yapılardır. <br>
    Template Driven Forms ve Model Driven(Reactive) Forms olarak ikiye ayrılır <br>
    <app-template-driven-forms></app-template-driven-forms>
-
+   <hr>
+   <app-model-driven-forms></app-model-driven-forms>
   `
 })
 export class AngularFormsConceptsComponent {
